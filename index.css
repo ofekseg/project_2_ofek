@@ -1,0 +1,116 @@
+/* From Uiverse.io by mrpumps31232 */
+.loading-wave {
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.loading-bar {
+    width: 20px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #3498db;
+    border-radius: 5px;
+    animation: loading-wave-animation 1s ease-in-out infinite;
+}
+
+.loading-bar:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.loading-bar:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.loading-bar:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+@keyframes loading-wave-animation {
+    0% {
+        height: 10px;
+    }
+
+    50% {
+        height: 50px;
+    }
+
+    100% {
+        height: 10px;
+    }
+}
+
+.card-width {
+    width: 300px !important;
+    height: 200px !important;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.img {
+    width: 50px !important;
+    height: 50px !important;
+
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("https://img.pikbest.com/wp/202405/cryptocurrency-3d-rendering-of-bitcoin-as-golden-coins_9848493.jpg!w700wp");
+    /* Set a specific height */
+    min-height: 1000px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar-custom {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* אופציונלי: תוסיף גבול תחתון שקוף קל */
+.navbar-custom {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* כדי לוודא שהלינקים נראים טוב על רקע שקוף */
+.navbar-custom .nav-link {
+    color: white;
+}
+
+#dialogBox {
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    background-color: white;
+    border: 2px solid #333;
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 60% !important;
+    height: 60% !important;
+
+    border-radius: 12px;
+}
+
+
+.button {
+    margin-top: 10px;
+    background-color: rgb(232, 173, 64);
+    border: rgb(232, 173, 64);
+    color: white;
+
+}
+
+.cardCollapse {
+    width: 270px !important;
+    height: 120px !important;
+    text-align: center;
+    border-radius: 12px;
+}
